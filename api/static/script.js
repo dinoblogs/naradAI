@@ -40,7 +40,7 @@ const getChatResponse = async (incomingChatDiv) => {
 </div>`
 
 
-    $.post("https://narad-l41gkyrye-dinoblogs.vercel.app/api",
+    $.post("/api",
 
         {
             msg: userText,
