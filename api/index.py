@@ -1,8 +1,11 @@
 from bardapi import Bard
 import os
+from flask_cors import CORS, cross_origin
 from flask import Flask, render_template, redirect, request
 
 app = Flask(__name__)
+CORS(app, supports_credentials=True) 
+
 app.secret_key = "krishna4704"
 #Replace XXXX with the values you get from __Secure-1PSID 
 os.environ['_BARD_API_KEY']="YAizMjUJbnOoezZf0MrT-yZ9qzT9IzFseBQXgea8KQ6h06bNWMJ7OVaEPZgWKfXLS7pvDA."
