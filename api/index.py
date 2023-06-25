@@ -20,7 +20,7 @@ __title__ = 'Narad AI'
     
 @app.route('/')
 def home():
-    return ("Hello World")
+    return render_template("index.html")
 @app.route('/api', methods = ['POST'])
 def api():
     if request.method == 'POST':
