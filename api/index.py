@@ -4,7 +4,7 @@ from flask_cors import CORS, cross_origin
 from flask import Flask, render_template, redirect, request
 
 app = Flask(__name__)
-CORS(app, supports_credentials=True) 
+cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
 app.secret_key = "krishna4704"
 #Replace XXXX with the values you get from __Secure-1PSID 
