@@ -30,12 +30,10 @@ def api():
         data = data.replace('Bard', 'Narad')
         data = data.replace('Google', 'Krishna Sharma')
         data = data.replace('google', 'Krishna Sharma')
-        # data = "{'msg':' " + data + " '}"
-        # return data
         return data
         
     else:
-        return redirect('/')
+        return "Not Found"
     
 
 if __name__ == "__main__":
