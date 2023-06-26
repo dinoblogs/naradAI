@@ -40,7 +40,7 @@ const getChatResponse = async (incomingChatDiv) => {
 </div>`
 
 
-    $.post("/api",
+    $.post("https://narad-ai-kappa.vercel.app/api",
 
         {
             msg: userText,
