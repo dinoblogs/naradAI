@@ -114,6 +114,7 @@ def api():
 
 @app.route('/img', methods = ['POST','GET'])
 def img():
+    chk()
     if request.method == 'POST':
         try:
             msg = request.form['msgs']
