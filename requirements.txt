@@ -1,3 +1,5 @@
 Flask
-bardapi
+requests
+openai
 flask_cors
+bs4
