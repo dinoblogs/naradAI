@@ -3,7 +3,6 @@ from flask_cors import CORS, cross_origin
 
 import openai
 
-from Bard import Chatbot
 import requests
 from bs4 import BeautifulSoup
 
@@ -23,7 +22,7 @@ app.secret_key = "krishna4704"
 # os.environ['_BARD_API_KEY']="YAhFIXuWe-TopFGMi-R3sCrDuE850kV09CECqWx-b3ZDzKN48dz_YpXdSe1Hy2ZnQibwiQ."
 # token = environ.get("BARD_TOKEN")
 
-chatbot = Chatbot("YAhFIXuWe-TopFGMi-R3sCrDuE850kV09CECqWx-b3ZDzKN48dz_YpXdSe1Hy2ZnQibwiQ.")
+# chatbot = Chatbot("YAhFIXuWe-TopFGMi-R3sCrDuE850kV09CECqWx-b3ZDzKN48dz_YpXdSe1Hy2ZnQibwiQ.")
 
 
 __title__ = 'Narad AI'
